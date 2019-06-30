@@ -8,8 +8,8 @@ import javax.persistence.Id;
 @Entity
 public class Book {
 
-    @Id
-    @GeneratedValue(strategy = GenerationType.AUTO)
+    @Id // 字段是实体的唯一标识
+    @GeneratedValue(strategy = GenerationType.AUTO) // 字段生成策略是自动生成的
     private Long id;
     private String reader;
     private String isbn;
